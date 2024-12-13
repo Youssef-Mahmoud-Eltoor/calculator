@@ -1,0 +1,95 @@
+/* تنسيق الصفحة */
+body {
+    background: url('images/pexels-simeon-theartist-28824299.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+  }
+  
+  
+  /* تنسيق الحاسبة */
+  .calculator {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.9); /* خلفية شفافة قليلاً */
+    padding: 20px;
+    border-radius: 15px; /* زوايا دائرية */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+    backdrop-filter: blur(10px); /* تأثير التمويه */
+    
+   
+  }
+  
+  /* شاشة العرض */
+  #result {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 10px;
+    border: none; /* إزالة الحواف */
+    border-radius: 10px;
+    background-color: #f3f3f3; /* خلفية فاتحة */
+    color: #333; /* لون النص */
+    
+  }
+  
+  /* شبكة الأزرار */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* شبكة من 4 أعمدة */
+    gap: 10px;
+  }
+  
+  /* الأزرار العامة */
+  button {
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: #007bff; /* اللون الافتراضي للأزرار */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #0056b3; /* لون أغمق عند التمرير */
+  }
+  
+  button:active {
+    transform: scale(0.95); /* تأثير الضغط */
+  }
+  
+  /* أزرار العمليات */
+  button:nth-child(4n) {
+    background: #28a745; /* اللون الأخضر */
+  }
+  
+  button:nth-child(4n):hover {
+    background: #1e7e34; /* لون أغمق عند التمرير */
+  }
+  
+  /* زر المساواة */
+  button:nth-last-child(2) {
+    background: #c82333; /* اللون الاحمر */
+  }
+  
+  button:nth-last-child(2):hover {
+    background: #c82333;
+  }
+  
+  /* زر المسح */
+  button:first-child {
+    background: #007bff; /* اللون الازرق */
+  }
+  
+  button:first-child:hover {
+    background: #007bff;
+  }
+  
